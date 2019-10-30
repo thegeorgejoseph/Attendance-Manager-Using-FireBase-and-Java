@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/fromText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/from_pick_b"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="From Date" />
+
+    <EditText
+        android:id="@+id/toText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/fromText"
+        android:layout_toLeftOf="@+id/to_pick_b"
+        android:cursorVisible="false"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="To Date" />
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toText"
+        android:layout_toLeftOf="@+id/search_b"
+        android:ems="10"
+        android:hint="User ID"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/from_pick_b"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Pick" />
+
+    <Button
+        android:id="@+id/to_pick_b"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/fromText"
+        android:layout_marginTop="0dp"
+        android:text="Pick" />
+
+    <Button
+        android:id="@+id/search_b"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/to_pick_b"
+        android:text="Search" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/search_b" />
+</RelativeLayout>

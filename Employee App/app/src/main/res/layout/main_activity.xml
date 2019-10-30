@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/checkin_b"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Check IN/OUT"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/manage_b"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkin_b"
+        android:text="Manage Attendance"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/request_b"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/manage_b"
+        android:text="Leave Request"
+        android:textSize="24sp" />
+</RelativeLayout>

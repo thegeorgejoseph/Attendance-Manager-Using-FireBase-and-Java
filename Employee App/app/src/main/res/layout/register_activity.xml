@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="New User Registration"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/employee_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:ems="10"
+            android:hint="Employee ID"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/f_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/employee_text"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/m_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/f_name_text"
+            android:ems="10"
+            android:hint="Middle Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/l_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/m_name_text"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/email_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/l_name_text"
+            android:ems="10"
+            android:hint="Email "
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/phno_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/email_text"
+            android:ems="10"
+            android:freezesText="true"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/dob_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/phno_text"
+            android:layout_toLeftOf="@+id/dobb"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:freezesText="true"
+            android:hapticFeedbackEnabled="false"
+            android:hint="Date of Birth" />
+
+        <EditText
+            android:id="@+id/doj_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dob_text"
+            android:layout_toLeftOf="@+id/dojb"
+            android:accessibilityLiveRegion="polite"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:ems="10"
+            android:freezesText="true"
+            android:hapticFeedbackEnabled="false"
+            android:hint="Date of Joining" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doj_text"
+            android:layout_centerHorizontal="true"
+            android:text="Set Password"
+            android:textColor="@android:color/black"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/pass_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:ems="10"
+            android:hint="Enter Password"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/pass_confirm_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/pass_text"
+            android:ems="10"
+            android:hint="Re-type password"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/final_reg_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pass_confirm_text"
+            android:layout_centerHorizontal="true"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/dobb"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/phno_text"
+            android:text="Pick" />
+
+        <Button
+            android:id="@+id/dojb"
+            style="@android:style/Widget.Button.Inset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/dobb"
+            android:layout_below="@+id/dob_text"
+            android:text="Pick" />
+
+    </RelativeLayout>
+</ScrollView>

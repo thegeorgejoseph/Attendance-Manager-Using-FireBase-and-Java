@@ -1,2 +1,5 @@
 # Attendance Manager Using FireBase and Java
  Employee Attendance Management System written in Core Java.
+
+
+This is a project created for the course of Database Management Systems in SRMIST. The idea of the project is to create a web based android application that can be used by employees to log into the system to give their attendance. The total system consists of two android applications, one is used by the employees to register their information/ mark their daily attendance. The other is the application used by the employer/ management to accept the requests of the employees for registration or absence of leave etc. Both the applications are maintained using Google's Firebase and is written in Core Java. The system also has a feature of geo-tagging the area from which the employee is making the requests. This is added as a security measure to prevent scamming.
